@@ -11,7 +11,7 @@ $("button a").on("click", function() {
         } else {
             $("#pw_warn").css("display","none");
             alert(name+"님 환영합니다! 로그인 페이지에서 로그인해주세요.");
-            location.href = "../index.html";
+            location.href = "/";
         }
     }
 });
