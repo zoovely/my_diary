@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+#flex_wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex_wrap > #wrap {
+    width: 450px;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid grey;
+    border-radius: 100px;
+    background-color: white;
+    padding: 50px;
+}
+
+#flex_wrap > #wrap > p {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#flex_wrap > #wrap > button {
+    width: 415px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#flex_wrap > #wrap > button > a {
+    font-size: 20px;
+    color: black;
+}
+
+#flex_wrap > #wrap > #input_wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px 0 20px 0;
+}
+
+#flex_wrap > #wrap > #input_wrap > label {
+    font-size: 20px;
+}
+
+#flex_wrap > #wrap > #input_wrap > input {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 5px 0 20px 0;
+}
+
+@media screen and (max-width: 570px) {
+    #flex_wrap > #wrap {
+        width: 300px;
+    }
+    #flex_wrap > #wrap > button {
+        width: 315px;
+    }
+    #flex_wrap > #wrap > #input_wrap > input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #flex_wrap > #wrap {
+        background-color: transparent;
+        border: none;
+    }
+    #flex_wrap > #wrap > button {
+        width: 245px;
+    }
+    #flex_wrap > #wrap > #input_wrap > input {
+        width: 230px;
+    }
+}
