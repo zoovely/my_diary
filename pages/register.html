@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 등록</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <div id="flex_wrap">
+        <div id="wrap">
+            <p>사용자 등록</p>
+            <div id="input_wrap">
+                <label for="name">계정명</label>
+                <input type="text" id="name">
+                <p id="name_warn">이미 등록된 계정입니다.</p>
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw">
+                <label for="pw_check">비밀번호 확인</label>
+                <input type="password" id="pw_check">
+                <p id="pw_warn">비밀번호가 일치하지 않습니다.</p>
+            </div>
+            <button><a href="#">등록</a></button>
+        </div>
+    </div>
+    <script src="../node/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>
