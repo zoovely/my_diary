@@ -18,6 +18,7 @@
   "homepage": "https://github.com/zoovely/my_diary#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "mysql": "^2.18.1"
   }
 }
