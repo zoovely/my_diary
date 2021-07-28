@@ -55,17 +55,11 @@
     margin-top: 20px;
 }
 
-#flex_wrap > #wrap > #input_wrap > p {
-    color: rgb(255, 82, 82);
-    display: none;
-    margin-top: 5px;
-}
-
 @media screen and (max-width: 570px) {
     #flex_wrap > #wrap {
         width: 300px;
     }
-    #flex_wrap > #wrap > button {
+    #flex_wrap > #wrap > #input_wrap > input:last-child {
         width: 315px;
     }
     #flex_wrap > #wrap > #input_wrap > input {
@@ -81,7 +75,7 @@
     #flex_wrap > #wrap > p {
         font-size: 45px;
     }
-    #flex_wrap > #wrap > button {
+    #flex_wrap > #wrap > #input_wrap > input:last-child {
         width: 245px;
     }
     #flex_wrap > #wrap > #input_wrap > input {

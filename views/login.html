@@ -12,13 +12,13 @@
     <div id="flex_wrap">
         <div id="wrap">
             <p>로그인</p>
-            <div id="input_wrap">
-                <label for="name">계정명</label>
-                <input type="text" id="name">
+            <form id="input_wrap" action="/login_check" method="post">
+                <label for="id">계정명</label>
+                <input type="text" id="id" name="id">
                 <label for="pw">비밀번호</label>
-                <input type="password" id="pw">
-            </div>
-            <button><a href="#">확인</a></button>
+                <input type="password" id="pw" name="pw">
+                <input type="submit" value="확인">
+            </form>
         </div>
     </div>
 </body>

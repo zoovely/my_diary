@@ -27,18 +27,6 @@
     margin-bottom: 20px;
 }
 
-#flex_wrap > #wrap > button {
-    width: 415px;
-    height: 40px;
-    border: 1px solid grey;
-    border-radius: 10px;
-}
-
-#flex_wrap > #wrap > button > a {
-    font-size: 20px;
-    color: black;
-}
-
 #flex_wrap > #wrap > #input_wrap {
     display: flex;
     flex-direction: column;
@@ -58,11 +46,20 @@
     margin: 5px 0 20px 0;
 }
 
+#flex_wrap > #wrap > #input_wrap > input:last-child {
+    width: 415px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+}
+
 @media screen and (max-width: 570px) {
     #flex_wrap > #wrap {
         width: 300px;
     }
-    #flex_wrap > #wrap > button {
+    #flex_wrap > #wrap > #input_wrap > input:last-child {
         width: 315px;
     }
     #flex_wrap > #wrap > #input_wrap > input {
@@ -75,7 +72,7 @@
         background-color: transparent;
         border: none;
     }
-    #flex_wrap > #wrap > button {
+    #flex_wrap > #wrap > #input_wrap > input:last-child {
         width: 245px;
     }
     #flex_wrap > #wrap > #input_wrap > input {
