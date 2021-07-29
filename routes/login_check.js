@@ -12,8 +12,8 @@ const login_check = function(req, res) {
                 res.send("<script>alert('존재하지 않는 계정명입니다.');window.location='/login';</script>");
             }
             else if(row[0].pw == pw) {
-                res.send(`<script>alert('${id}님 오늘도 반갑습니다!');window.location='/';</script>`);
-            } //일기 페이지로 이동 수정 필요
+                res.send(`<script>alert('${id}님 오늘도 반갑습니다!');window.location='/diary';</script>`);
+            }
             else {
                 res.send("<script>alert('비밀번호가 맞지 않습니다.');window.location='/login';</script>");
             } 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기 목록</title>
+    <link rel="stylesheet" href="/css/common.css"> <!--css파일, 이미지 주소 node에 맞게 수정 필수!-->
+    <link rel="stylesheet" href="/css/diary.css">
+</head>
+<body>
+    <div id="gnb">
+        <a href="/">로그아웃</a>
+        <div id="new">
+            <span>오늘의 일기</span>
+            <a href="/new_diary"><img src="/img/plus.png"></a>
+        </div>
+        <button><img src="/img/ham.png"></button>
+    </div>
+    <div id="ham_gnb">
+        <p><a href="/">로그아웃</a></p>
+        <p><a href="/new_diary">오늘의 일기 작성</a></p>
+    </div>
+    <div id="content">
+        <div id="date">
+            <button id="left"><img src="/img/left.png"></button>
+            <span></span>
+            <button id="right"><img src="/img/right.png"></button>
+        </div>
+        <div id="list">
+            <button class="memo">
+                <p>날짜</p>
+                <img src="/img/1.png">
+            </button>
+            <button class="memo">
+                <p>날짜</p>
+                <img src="/img/1.png">
+            </button>
+            <button class="memo">
+                <p>날짜</p>
+                <img src="/img/1.png">
+            </button>
+            <button class="memo">
+                <p>날짜</p>
+                <img src="/img/1.png">
+            </button>
+            <button class="memo">
+                <p>날짜</p>
+                <img src="/img/1.png">
+            </button>
+            <button class="memo">
+                <p>날짜</p>
+                <img src="/img/1.png">
+            </button>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/diary.js"></script>
+</body>
+</html>
