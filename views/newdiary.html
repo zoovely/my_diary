@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일기 작성</title>
+    <link rel="stylesheet" href="/css/common.css"> <!--css파일, 이미지, js 주소 node에 맞게 수정 필수!-->
+    <link rel="stylesheet" href="/css/newdiary.css">
 </head>
 <body>
+    <div id="gnb">
+        <a href="/">로그아웃</a>
+        <a href="/diary">일기 목록</a>
+        <button><img src="/img/ham.png"></button>
+    </div>
+    <div id="ham_gnb">
+        <p><a href="/">로그아웃</a></p>
+        <p><a href="/diary">일기 목록</a></p>
+    </div>
     
+    <div id="content">
+        <div id="date">
+            <p>123</p>
+        </div>
+        <form id="new_form" method="post" action="/new_check">
+            <p>오늘의 기분은 어땠나요?</p>
+            <div id="emotion_radio">
+                <input type="radio" id="r1" value="1" name="emotion">
+                <label for="r1"></label>
+                <input type="radio" id="r2" value="2" name="emotion">
+                <label for="r2"></label>
+                <input type="radio" id="r3" value="3" name="emotion">
+                <label for="r3"></label>
+            </div>
+
+            <p>오늘의 한마디는?</p>
+            <input type="text" id="sentence" name="sentence">
+            <label for="sentence"></label>
+
+            <p>오늘 가장 기뻤던 일은 무엇인가요?</p>
+            <textarea id="happy" name="happy"></textarea>
+
+            <p>오늘 가장 힘들었던 일은 무엇인가요?</p>
+            <textarea id="hard" name="hard"></textarea>
+
+            <p>내일의 나에게 하고 싶은 말</p>
+            <input type="text" id="tomorrow" name="tomorrow">
+            <label for="tomorrow"></label> 
+
+            <br>
+            <input type="submit" value="저장">
+        </form> 
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/newdiary.js"></script>
 </body>
 </html>

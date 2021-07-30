@@ -3,6 +3,8 @@ const router = express.Router();
 const regi_check = require('./regi_check');
 const login_check = require('./login_check');
 const diary_check = require('./diary_check');
+const api = require('./api');
+const new_check = require('./new_check');
 
 router.get('/', function(req, res) {
     res.render("index.html");
@@ -30,5 +32,7 @@ router.get('/popup', function(req,res) {
 router.get('/new_diary', function(req,res) {
     res.render("newdiary.html");
 });
+router.post('/api', api);
+router.post('/new_check', new_check);
 
 module.exports = router;

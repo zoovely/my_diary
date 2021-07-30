@@ -103,7 +103,7 @@
         position: fixed;
         top: 50px;
         width: 100%;
-        padding: 20px;
+        padding: 20px 0 20px 0;
         text-align: center;
         background-color: white;
         border-bottom: 1px solid gray;
