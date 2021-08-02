@@ -21,6 +21,8 @@ const login_check = function(req, res) {
     } else {
         res.send("<script>alert('빈칸을 모두 채워주세요.');window.location='/login';</script>");
     }
+
+    global.id = id;
 }
 
 module.exports = login_check;
