@@ -41,8 +41,8 @@ $(function() {
             }
             else {
                 for(i in result) {
-                    dMonth = result[i].date.substr(5,2);
-                    dDate = result[i].date.substr(8,2);
+                    dMonth = Number(result[i].date.substr(5,2));
+                    dDate = Number(result[i].date.substr(8,2))+1;
                     dEmotion = String(result[i].emotion);
                     convert_month();
                     if(dMonth == month) {
@@ -86,8 +86,8 @@ $("#left").on("click", function() {
             } else {
                 for(i in result) {
                     console.log(result);
-                    dMonth = result[i].date.substr(5,2);
-                    dDate = result[i].date.substr(8,2);
+                    dMonth = Number(result[i].date.substr(5,2));
+                    dDate = Number(result[i].date.substr(8,2))+1;
                     dEmotion = String(result[i].emotion);
                     new_button();
                 }
@@ -123,8 +123,8 @@ $("#right").on("click", function() {
             } else {
                 for(i in result) {
                     console.log(result);
-                    dMonth = result[i].date.substr(5,2);
-                    dDate = result[i].date.substr(8,2);
+                    dMonth = Number(result[i].date.substr(5,2));
+                    dDate = Number(result[i].date.substr(8,2))+1;
                     dEmotion = String(result[i].emotion);
                     new_button();
                 }
@@ -134,20 +134,33 @@ $("#right").on("click", function() {
     reverse_month();
 });
 
-//일기 선택시 팝업 뜨면서 상세보기
-$(".memo").on("click", function() {
+//일기 선택시 상세보기로 넘어감
+$(document).on("click", ".memo", function() {
+    var memodate = $(this).children('p').text();
+    memodate = memodate.split('일', 1);
+    memodate = memodate[0].replace(/ /gi, '')
+    memodate = memodate.split('월');
+    for(i in memodate) {
+        if(memodate[i].length==1) {
+            memodate[i] = '0'+memodate[i];
+        }
+    }
+
+    var memoyear = $("#date span").text();
+    memoyear = memoyear.split('년',1);
+
+    var clickdate = memoyear + '-' + memodate[0] + '-' + memodate[1];
+
     $.ajax({
         url: '/diary_check',
         dataType: 'json',
         type: 'POST',
-        data: {'data':date},
+        data: {'data':clickdate},
         success: function(result) {
             if (result) {
-                console.log("완료");
+                localStorage.setItem("readdiary", JSON.stringify(result));
+                location.href="/read_diary";
             }
         }
     });
-    window.open('/popup','팝업', "height=700, width=700");
 });
-
-//팝업 구현만 하면 끝 !!!!!!
