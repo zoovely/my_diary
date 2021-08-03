@@ -11,7 +11,6 @@ const diary_update = function (req, res) {
                 result.push({date:row[i].date, emotion:row[i].emotion});
             }
             res.send(result);
-            console.log(result);
         }
     });
 }

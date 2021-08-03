@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+#gnb {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    font-weight: bolder;
+    border-bottom: 1px solid gray;
+}
+#gnb > a {
+    line-height: 35px;
+    font-size: 20px;
+    color: black;
+    float: right;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+#content > #date {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+#content > #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+#content > #form > p {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#content > #form > div {
+    width: 800px;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: white;
+}
+#content > #form > #emotion {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: white;
+}
+#content > #form > #emotion > img {
+    width: 90px;
+    height: 90px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width:950px) {
+    #content > #form > div {
+        width: 600px;
+    }
+}
+@media screen and (max-width:700px) {
+    #content > #form > div {
+        width: 400px;
+    }
+    #content > #form > p {
+        font-size: 25px;
+    }
+    #content > #date {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:480px) {
+    #content > #form > div {
+        width: 300px;
+    }
+    #content > #form > p {
+        font-size: 20px;
+    }
+    #content > #form > #emotion {
+        width: 70px;
+        height: 70px;
+    }
+    #content > #form > #emotion > img {
+        width: 60px;
+        height: 60px;
+    }
+    #content > #date {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:380px) {
+    #gnb {
+        text-align: center;
+    }
+    #gnb > a {
+        float: none;
+    }
+    #content > #form > div {
+        width: 200px;
+    }
+    #content > #form > p {
+        padding: 10px;
+    }
+}

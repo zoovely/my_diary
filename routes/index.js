@@ -39,4 +39,8 @@ router.get('/new_diary', function(req,res) {
 router.post('/api', api);
 router.post('/new_check', new_check);
 
+router.get('/read_diary', function(req,res) {
+    res.render("readdiary.html");
+});
+
 module.exports = router;
