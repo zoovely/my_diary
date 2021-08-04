@@ -22,7 +22,7 @@ function new_button() {
     new_button += dDate;
     new_button += "일</p><img src='/img/";
     new_button += dEmotion;
-    new_button += ".png'></button>";
+    new_button += ".png' alt='emotion'></button>";
     $("#list").append(new_button);
 }
 

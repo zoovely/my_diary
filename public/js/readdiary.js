@@ -17,7 +17,7 @@ $(function() {
 
     var appemotion = "<img src='/img/";
     appemotion += result[1].emotion;
-    appemotion += ".png'>"
+    appemotion += ".png' alt='emotion'>"
     $("#emotion").append(appemotion);
 
     $("#sentence").append(result[1].sentence);
