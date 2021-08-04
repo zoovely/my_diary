@@ -42,7 +42,7 @@ $(function() {
             else {
                 for(i in result) {
                     dMonth = Number(result[i].date.substr(5,2));
-                    dDate = Number(result[i].date.substr(8,2))+1;
+                    dDate = Number(result[i].date.substr(8,2));
                     dEmotion = String(result[i].emotion);
                     convert_month();
                     if(dMonth == month) {
@@ -87,7 +87,7 @@ $("#left").on("click", function() {
                 for(i in result) {
                     console.log(result);
                     dMonth = Number(result[i].date.substr(5,2));
-                    dDate = Number(result[i].date.substr(8,2))+1;
+                    dDate = Number(result[i].date.substr(8,2));
                     dEmotion = String(result[i].emotion);
                     new_button();
                 }
@@ -124,7 +124,7 @@ $("#right").on("click", function() {
                 for(i in result) {
                     console.log(result);
                     dMonth = Number(result[i].date.substr(5,2));
-                    dDate = Number(result[i].date.substr(8,2))+1;
+                    dDate = Number(result[i].date.substr(8,2));
                     dEmotion = String(result[i].emotion);
                     new_button();
                 }
