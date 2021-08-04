@@ -15,4 +15,11 @@ function typing() {
     } else { 
         clearInterval(tyInt);
     } 
-}  
+}
+
+$("#login").on("click", function() {
+    location.href="login";
+});
+$("#register").on("click", function() {
+    location.href="register";
+});

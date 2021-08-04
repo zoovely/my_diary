@@ -39,9 +39,6 @@
     border: none;
     background-color: transparent;
     margin: 20px 60px 30px 60px;
-}
-
-#wrap > #user_btn > button > a {
     font-size: 2em;
     color: black;
 }
@@ -58,8 +55,6 @@
     }
     #wrap > #user_btn > button {
         margin: 0 40px 30px 40px;
-    }
-    #wrap > #user_btn > button > a {
         font-size: 22px;
     }
 }
@@ -68,7 +63,7 @@
     #wrap > #title {
         font-size: 36px;
     }
-    #wrap > #user_btn > button > a {
+    #wrap > #user_btn > button {
         font-size: 20px;
     }
 }
@@ -79,8 +74,6 @@
     }
     #wrap > #user_btn > button {
         margin: 0 20px 30px 20px;
-    }
-    #wrap > #user_btn > button > a {
         font-size: 18px;
     }
 }
