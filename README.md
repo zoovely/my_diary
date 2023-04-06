@@ -4,6 +4,7 @@
 
 **Front-end** : HTML5, CSS3, JavaScript, jQuery  
 **Back-end** : Node.js, AWS EC2, AWS RDS(MySQL)
+
 (AWS 프리티어 기한 만료로 현재는 웹사이트 방문이 불가합니다.)
 
 ## 📌 상세 설명
