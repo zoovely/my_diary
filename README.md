@@ -4,8 +4,7 @@
 
 **Front-end** : HTML5, CSS3, JavaScript, jQuery  
 **Back-end** : Node.js, AWS EC2, AWS RDS(MySQL)
-
-[💻 Home Page](http://ec2-18-220-160-71.us-east-2.compute.amazonaws.com/)
+(AWS 프리티어 기한 만료로 현재는 웹사이트 방문이 불가합니다.)
 
 ## 📌 상세 설명
 <img width="750" src="https://user-images.githubusercontent.com/84768491/128297176-2cd4f542-1bb6-429f-9954-4d26e345512e.gif">
